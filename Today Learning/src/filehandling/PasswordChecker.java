@@ -11,7 +11,7 @@ public class PasswordChecker {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Please enter the password");
 		String password = sc.next();
-		String[] regex = { "[*A-Z]", "[*a-z]", "[^//s]", "[*0-9]", "[*.!@#$&]" };
+		String[] regex = { "[*A-Z]", "[*a-z]", "[^//s]", "[*0-9]", "[*.!@#$&()]" };
 		boolean found = true;
 		for (int i = 0; i < regex.length; i++) {
 			Pattern p = Pattern.compile(regex[i]);
