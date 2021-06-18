@@ -22,12 +22,12 @@ public class PasswordChecker {
 				if (s == found) {
 					System.out.println("Proceed");
 				} else {
-					System.out.println("Please check password constraint");
+					System.out.println(i +" th condition fails Please check password constraint");
 				}
 			}
-			if (password.length() < 8) {
-				System.out.println("Password should be atleast 8 letters");
-			}
+		}
+		if (password.length() < 8) {
+			System.out.println("Password should be atleast 8 letters");
 		}
 	}
 }
