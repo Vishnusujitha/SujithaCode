@@ -1,9 +1,9 @@
 package bank.deposit;
 
+import java.time.LocalDate;
+import java.time.temporal.TemporalAdjusters;
 import java.util.Calendar;
 import java.util.Scanner;
-import java.time.LocalDate;
-import java.time.temporal.*;
 
 public class BusFare {
 	public static void main(String[] args) {
@@ -72,4 +72,5 @@ public class BusFare {
 		float profit_percentage = (profit / total_fare_normal_days) * 100;
 		System.out.println("Profit percentage for one month is " + profit_percentage);
 	}
+
 }
